@@ -1,0 +1,8 @@
+$colorBlackMain: rgb(41, 47, 54);
+$colorBlackSoft: rgb(77, 80, 83);
+
+@mixin text-style($font-weight: 400, $font-size: 14px, $color: black) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+}

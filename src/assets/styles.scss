@@ -1,0 +1,853 @@
+@import "@/assets/variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:-webkit-any-link {
+  all: unset;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+
+}
+
+// шапка
+
+.header {
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-nav {
+  &_right {
+    width: 306px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  &_right-text {
+    cursor: pointer;
+    @include text-style(400, 20px, $colorBlackMain);
+  }
+
+  &_left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &_left-text {
+    font-family: "DM Serif Display", serif;
+    @include text-style(400, 40px, $colorBlackMain);
+  }
+}
+
+// главная часть 
+// первая картинка
+
+.firstPart {
+  padding-top: 57px;
+
+  &_box {
+    background-image: url(pics/main.webp);
+    border-radius: 70px;
+    background-size: cover;
+    background-position: center 47%;
+    width: 1200px;
+    height: 758px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &_h1 {
+    @include text-style(400, 65px, $colorBlackMain);
+    padding-bottom: 18px;
+    padding-left: 52px;
+  }
+
+  &_p {
+    @include text-style(400, 22px, $colorBlackSoft);
+    padding-bottom: 22px;
+    padding-left: 52px;
+  }
+
+  &_button {
+    margin-left: 52px;
+    width: 182.14px;
+    height: 75px;
+    border-radius: 18px;
+    border-style: none;
+    background-color: $colorBlackMain;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    @include text-style(600, 18px, white);
+  }
+}
+
+// 4 картинки
+
+.PP1 {
+  background-image: url(pics/secondPart-1.webp);
+  width: 548px;
+  height: 525px;
+  border-radius: 0 80px 0 0;
+  background-size: 125%;
+  background-position: 75% 53%;
+  background-repeat: no-repeat;
+}
+
+.PP2 {
+  background-image: url(pics/secondPart-2.webp);
+  width: 548px;
+  height: 525px;
+  border-radius: 80px 0 0 0;
+  background-size: 170%;
+  background-position: 15% 55%;
+  background-repeat: no-repeat;
+}
+
+.PP3 {
+  background-image: url(pics/secondPart-3.webp);
+  width: 548px;
+  height: 525px;
+  border-radius: 0 0 80px 0;
+  background-size: 125%;
+  background-position: 58% 55%;
+  background-repeat: no-repeat;
+}
+
+.PP4 {
+  background-image: url(pics/secondPart-4.webp);
+  width: 548px;
+  height: 525px;
+  border-radius: 0 0 0 80px;
+  background-size: 135%;
+  background-position: 70% 48%;
+  background-repeat: no-repeat;
+}
+
+.secondPart {
+  padding-bottom: 96px;
+
+  &_text {
+    padding-top: 96px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 93px;
+  }
+
+  &_text-h {
+    @include text-style(400, 50px, $colorBlackMain);
+  }
+
+  &_text-p {
+    @include text-style(400, 22px, $colorBlackSoft);
+  }
+
+  &_grid {
+    display: grid;
+    grid-template-columns: 548px 548px;
+    grid-template-rows: 619px 619px;
+    gap: 56px 104px;
+    grid-template-areas:
+      ". ."
+      ". .";
+    justify-content: center;
+  }
+
+  &_plate-down {
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+
+    &_text {
+      display: flex;
+      flex-direction: column;
+      gap: 4px
+    }
+
+    &_text-h {
+      @include text-style(400, 25px, $colorBlackMain);
+    }
+
+    &_text-p {
+      @include text-style(400, 22px, $colorBlackSoft);
+    }
+
+    &_button {
+      width: 70px;
+      height: 70px;
+      background-color: rgb(244, 240, 236);
+      border-radius: 90px;
+      border: none;
+    }
+  }
+}
+
+// плашка во весь экран
+
+.thirdPart {
+  background-color: #F4F0EC;
+
+  &_box {
+    // gap: 152px;
+    padding-top: 151px;
+    padding-bottom: 151px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &_numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-right: 70px;
+    border-right: #CDA274 1px solid;
+
+    &_h {
+      @include text-style(400, 85px, #CDA274);
+    }
+
+    &_p {
+      @include text-style(400, 22px, $colorBlackSoft);
+    }
+  }
+}
+
+.border-none {
+  border: none;
+  padding-right: 0px;
+}
+
+// новости
+
+.AP1 {
+  background-image: url(pics/add-pic-1.webp);
+  width: 340px;
+  height: 290px;
+  border-radius: 45px 45px 0 0;
+  background-size: 185%;
+  background-position: 55% 55%;
+  background-repeat: no-repeat;
+  margin: 21px 21px 0px 21px;
+}
+
+.AP2 {
+  background-image: url(pics/add-pic-2.webp);
+  width: 340px;
+  height: 290px;
+  border-radius: 45px 45px 0 0;
+  background-size: 170%;
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+  margin: 21px 21px 0px 21px;
+}
+
+.AP3 {
+  background-image: url(pics/add-pic-3.webp);
+  width: 340px;
+  height: 290px;
+  border-radius: 45px 45px 0 0;
+  background-size: 270%;
+  background-position: 53% 45%;
+  background-repeat: no-repeat;
+  margin: 21px 21px 0px 21px;
+}
+
+.AP4 {
+  background-image: url(pics/add-pic-4.webp);
+  width: 340px;
+  height: 290px;
+  border-radius: 45px 45px 0 0;
+  background-size: 150%;
+  background-position: 55% 40%;
+  background-repeat: no-repeat;
+  margin: 21px 21px 0px 21px;
+}
+
+.AP5 {
+  background-image: url(pics/add-pic-5.webp);
+  width: 340px;
+  height: 290px;
+  border-radius: 45px 45px 0 0;
+  background-size: 120%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  margin: 21px 21px 0px 21px;
+}
+
+.AP6 {
+  background-image: url(pics/add-pic-6.webp);
+  width: 340px;
+  height: 290px;
+  border-radius: 45px 45px 0 0;
+  background-size: 150%;
+  background-position: 80% 45%;
+  background-repeat: no-repeat;
+  margin: 21px 21px 0px 21px;
+}
+
+.fourthPart {
+  &_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 96px;
+
+    &_h {
+      @include text-style(400, 50px, $colorBlackMain);
+    }
+
+    &_p {
+      @include text-style(400, 22px, $colorBlackSoft);
+    }
+  }
+
+  &_add-card {
+    width: 380px;
+    height: 519px;
+    border: 1px solid #E7E7E7;
+    border-radius: 65px 65px 65px 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &_pp {
+      position: absolute;
+      top: 261.5px;
+      left: 45px;
+      background-color: white;
+      border-radius: 8px 8px 8px 0px;
+      padding: 5px;
+    }
+
+    &_h {
+      padding-left: 21px;
+      padding-top: 21px;
+      padding-bottom: 30px;
+      @include text-style(400, 25px, #292F36);
+    }
+
+    &_down {
+      display: flex;
+      gap: 65px;
+      align-items: center;
+
+      &_p {
+        width: 223px;
+        height: 33px;
+        @include text-style(400, 16px, rgb(77, 80, 83));
+      }
+
+      &_button {
+        width: 52px;
+        height: 52px;
+        background-color: rgb(244, 240, 236);
+        border-radius: 90px;
+        border: none;
+      }
+    }
+  }
+
+  &_adds {
+    padding-top: 52px;
+    display: flex;
+    gap: 27px;
+    padding-bottom: 33px;
+  }
+}
+
+.second-child {
+  background-color: rgb(244, 240, 236);
+}
+
+.second-child-button {
+  background-color: white;
+}
+
+// подвал
+
+.footer {
+  &_collection {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  &_collection-part {
+    width: 350px;
+
+    &_social {
+      font-family: "DM Serif Display", sans-serif;
+      @include text-style(400, 40px, #292F36);
+
+      &_icons {
+        display: flex;
+        gap: 150px;
+
+        align-items: center;
+      }
+    }
+
+    &_nav {
+      @include text-style(400, 25px, #292F36);
+
+      &_part {
+        @include text-style(400, 22px, #292F36);
+      }
+    }
+
+    &_contacts {
+      list-style-type: none;
+      @include text-style(400, 25px, $colorBlackMain);
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+
+      &_part {
+        @include text-style(400, 22px, rgb(77, 80, 83));
+      }
+    }
+  }
+
+}
+
+// страница blog
+
+.firstPart-blog {
+  height: 452px;
+  padding-top: 45px;
+
+  &_background {
+    background-image: url(pics/blog_main.webp);
+    width: 100%;
+    height: 356px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  &_text-box {
+    max-width: 100%;
+    height: 421px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_text {
+    position: absolute;
+    top: -170px;
+    width: 503px;
+    height: 317px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 37px 37px;
+
+    &_h {
+      @include text-style(400, 50px, #292F36);
+    }
+
+    &_nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    &_p {
+      @include text-style(400, 22px, rgb(77, 80, 83));
+    }
+  }
+}
+
+.head-nav_right-text_p:not(:first-child):before {
+  content: "/";
+  padding-right: 15px;
+}
+
+.secondPart-blog {
+  padding-top: 104px;
+  width: 1201px;
+  height: 695px;
+
+  &_button-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 41px;
+  }
+
+  &_h-main {
+    @include text-style(400, 50px, #292F36);
+    padding-bottom: 27px;
+  }
+
+  &_box {
+    display: flex;
+    gap: 65px;
+    border: 1px rgb(231, 231, 231) solid;
+    border-radius: 45px 45px 45px 45px;
+  }
+
+  &_pic {
+    background-image: url(pics/add_main.webp);
+    width: 569px;
+    height: 478px;
+    margin-top: 53px;
+    margin-left: 22px;
+    margin-bottom: 53px;
+    border-radius: 45px 45px 45px 45px;
+  }
+
+  &_text {
+    width: 489px;
+    height: 540px;
+    margin-top: 22px;
+
+    &_h {
+      @include text-style(400, 25px, #292F36);
+      font-family: "DM Serif Display", serif;
+    }
+
+    &_p {
+      padding-top: 22px;
+      @include text-style(400, 22px, rgb(77, 80, 83));
+    }
+
+    &_date {
+      @include text-style(400, 16px, rgb(77, 80, 83));
+    }
+  }
+}
+
+.thirdPart-blog {
+  &_h-main {
+    padding-top: 88px;
+    padding-bottom: 30px;
+    @include text-style(400, 50px, #292F36);
+  }
+
+  &_adds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+  }
+
+  &_nav-buttons {
+    padding-top: 51px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    &_button {
+      width: 52px;
+      height: 52px;
+      background-color: white;
+      border: 1px solid #CDA274;
+      border-radius: 90px;
+      @include text-style(500, 16px, $colorBlackMain);
+    }
+  }
+}
+
+.first-button-nav {
+  background-color: rgb(244, 240, 236);
+  border: none;
+}
+
+
+
+.footer-add_main {
+  padding-top: 200px;
+}
+
+// blog details
+
+.firstPart-details {
+  &_main-pic {
+    background-image: url(pics/blog-details-main.webp);
+    width: 100%;
+    height: 351px;
+    background-size: 100%;
+    background-position: -25% 50%;
+    background-repeat: no-repeat;
+    margin-top: 45px;
+  }
+}
+
+.secondPart-details {
+  display: flex;
+
+  &_box {
+    display: flex;
+    flex-direction: row;
+    gap: 52px;
+    padding-top: 200px;
+
+    &_h {
+      @include text-style(400, 25px, $colorBlackMain);
+      padding-bottom: 24px;
+    }
+
+    // &_tags {}
+
+    &_buttons {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: 41px 41px 41px;
+      gap: 10px 10px;
+      grid-template-areas:
+        ". ."
+        ". ."
+        ". .";
+      justify-content: center;
+    }
+
+    &_button {
+      max-height: 41px;
+      padding: 9px 30px;
+      background-color: #F4F0EC;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      @include text-style(400, 18px, $colorBlackMain);
+    }
+
+    &_button:hover {
+      @include text-style(400, 18px, white);
+      background-color: $colorBlackMain;
+    }
+  }
+}
+
+.article-box {
+  &_h2 {
+    @include text-style(400, 50px, $colorBlackMain);
+    padding-bottom: 21px;
+  }
+
+  &_p-box {
+    display: flex;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    gap: 410px;
+
+    &_date {
+      @include text-style(400, 16px, $colorBlackSoft);
+    }
+
+    &_links {
+      @include text-style(400, 16px, $colorBlackSoft);
+    }
+
+    &_text {
+      @include text-style(400, 22px, $colorBlackSoft);
+    }
+  }
+
+  &_quote {
+    font-family: "DM Serif Display", serif;
+    @include text-style(400, 24px, #CDA274);
+    background-color: #F4F0EC;
+    width: 800px;
+    height: 267px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 27px;
+    margin-top: 35px;
+  }
+
+  &_ol {
+    padding-top: 24px;
+    padding-bottom: 44px;
+  }
+
+  &_li {
+    margin-left: 20px;
+    @include text-style(400, 22px, $colorBlackSoft);
+  }
+
+  &_li::marker {
+    color: #CDA274;
+  }
+}
+
+.article-pic {
+  &_kitchen {
+    &_first-img {
+      background-image: url(pics/article-box_img-first.webp);
+      width: 800px;
+      height: 540px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+
+    &_second-img {
+      margin-bottom: 35px;
+      background-image: url(pics/article-box_img-second.webp);
+      width: 800px;
+      height: 365px;
+      background-size: 110%;
+      background-position: 75% 30%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_bedroom {
+    &_first-img {
+      background-image: url(pics/blog-details-main.webp);
+      width: 800px;
+      height: 540px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+
+    &_second-img {
+      margin-bottom: 35px;
+      background-image: url(pics/bedroom-pic2.webp);
+      width: 800px;
+      height: 365px;
+      background-size: 100%;
+      background-position: 40% 40%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_building {
+    &_first-img {
+      background-image: url(pics/building-pic1.webp);
+      width: 800px;
+      height: 540px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+
+    &_second-img {
+      margin-bottom: 35px;
+      background-image: url(pics/building-pic2.webp);
+      width: 800px;
+      height: 365px;
+      background-size: 110%;
+      background-position: 75% 30%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_architecture {
+    &_first-img {
+      background-image: url(pics/architecture-pic1.webp);
+      width: 800px;
+      height: 540px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+
+    &_second-img {
+      margin-bottom: 35px;
+      background-image: url(pics/architecture-pic2.webp);
+      width: 800px;
+      height: 365px;
+      background-size: 110%;
+      background-position: 75% 30%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_layout {
+    &_first-img {
+      background-image: url(pics/add-pic-2.webp);
+      width: 800px;
+      height: 540px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+
+    &_second-img {
+      margin-bottom: 35px;
+      background-image: url(pics/secondPart-1.webp);
+      width: 800px;
+      height: 365px;
+      background-size: 100%;
+      background-position: 60% 60%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_diningRoom {
+    &_first-img {
+      background-image: url(pics/add-pic-1.webp);
+      width: 800px;
+      height: 540px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+
+    &_second-img {
+      margin-bottom: 35px;
+      background-image: url(pics/add-pic-6.webp);
+      width: 800px;
+      height: 365px;
+      background-size: 100%;
+      background-position: 75% 30%;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+    }
+  }
+}
