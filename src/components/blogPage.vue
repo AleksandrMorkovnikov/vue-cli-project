@@ -1,6 +1,6 @@
 <template>
   <body id="appBlog">
-    <header class="header center">
+    <!-- <header class="header center">
       <div class="head-nav_left">
         <svg width="33.997559" height="34.000244" viewBox="0 0 33.9976 34.0002" fill="none"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -16,7 +16,8 @@
           <router-link :to="item.route">{{ item.name }}</router-link>
         </p>
       </div>
-    </header>
+    </header> -->
+    <headerComp></headerComp>
     <main>
       <div class="firstPart-blog">
         <div class="firstPart-blog_background"></div>
@@ -158,6 +159,7 @@
 </template>
 
 <script>
+import headerComp from '@/components/HeaderComp.vue';
 export default {
   el: "#appBlog",
   data() {
@@ -223,6 +225,9 @@ export default {
     indexNav() {
       return this.headerItems.slice(0, 2);
     },
+  },
+  components: {
+    headerComp,
   },
 }
 </script>

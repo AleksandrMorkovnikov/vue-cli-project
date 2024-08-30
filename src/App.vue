@@ -1,5 +1,7 @@
 <template>
     <router-view></router-view>
+    <!-- Домашнее задание 10 -->
+     <!-- <hw10></hw10> -->
 </template>
 
 <script>
@@ -7,10 +9,14 @@
 // import blogDetailsPage from './components/blogDetailsPage.vue'
 // import blogPage from './components/blogPage.vue'
 
+// Домашнее задание 10
+// import hw10 from '@/components/hw10.vue';
+
 export default {
   name: 'App',
   // components: {
-  //   mainPage,
+  // Домашнее задание 10
+  //   hw10,
   // }
 }
 </script>

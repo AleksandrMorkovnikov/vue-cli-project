@@ -1,6 +1,6 @@
 <template>
   <body id="appIndex">
-    <header class="header center">
+    <!-- <header class="header center">
       <div class="head-nav_left">
         <svg width="33.997559" height="34.000244" viewBox="0 0 33.9976 34.0002" fill="none"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -16,7 +16,8 @@
           <router-link :to="item.route">{{ item.name }}</router-link>
         </p>
       </div>
-    </header>
+    </header> -->
+    <headerComp></headerComp>
     <main>
       <div class="firstPart center">
         <div class="firstPart_box">
@@ -246,18 +247,12 @@
 </template>
 
 <script>
-
+import headerComp from '@/components/HeaderComp.vue';
 export default {
   name: 'mainPage',
   el: "#appIndex",
     data() {
     return {
-      headerItems: [
-        { name: "Домой", route: "/" },
-        { name: "Проект", route: "#" },
-        { name: "Блог", route: "/blog" },
-        { name: "Статьи", route: "/blog-details" }
-      ],
       newsPlates: [
         {
           photoText: "Дизайн кухни",
@@ -310,6 +305,9 @@ export default {
     indexPlates() {
       return this.newsPlates.slice(0, 3);
     },
+  },
+  components: {
+    headerComp,
   },
 }
 </script>
