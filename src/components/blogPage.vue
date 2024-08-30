@@ -95,7 +95,7 @@
         </button>
       </div>
     </main>
-    <footer class="footer-add_main center">
+    <!-- <footer class="footer-add_main center">
       <div class="footer_collection">
         <div class="footer_collection-part">
           <div class="footer_collection-part_social">
@@ -154,12 +154,14 @@
           </ol>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <footerComp></footerComp>
   </body>
 </template>
 
 <script>
 import headerComp from '@/components/HeaderComp.vue';
+import footerComp from '@/components/FooterComp.vue';
 export default {
   el: "#appBlog",
   data() {
@@ -228,6 +230,7 @@ export default {
   },
   components: {
     headerComp,
+    footerComp
   },
 }
 </script>

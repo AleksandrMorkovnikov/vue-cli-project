@@ -407,7 +407,6 @@ body {
     justify-content: space-between;
     padding-bottom: 50px;
   }
-
   &_collection-part {
     width: 350px;
 
@@ -571,6 +570,7 @@ body {
   }
 
   &_nav-buttons {
+    padding-bottom: 200px;
     padding-top: 51px;
     display: flex;
     justify-content: center;
@@ -678,6 +678,7 @@ body {
     }
 
     &_text {
+      padding-bottom: 63px;
       @include text-style(400, 22px, $colorBlackSoft);
     }
   }
