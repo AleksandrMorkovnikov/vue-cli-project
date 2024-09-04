@@ -248,8 +248,8 @@
 </template>
 
 <script>
-import headerComp from '@/components/HeaderComp.vue';
-import footerComp from '@/components/FooterComp.vue';
+import headerComp from '@/components/HeaderFooter/HeaderComp.vue';
+import footerComp from '@/components/HeaderFooter/FooterComp.vue';
 export default {
   name: 'mainPage',
   el: "#appIndex",

@@ -100,14 +100,14 @@
 </template>
 
 <script>
-import footerComp from '@/components/FooterComp.vue';
-import headerComp from '@/components/HeaderComp.vue';
-import KitchenArticle from '@/components/KitchenArticle.vue';
-import BedroomArticle from '@/components/BedroomArticle.vue';
-import BuildingArticle from '@/components/BuildingArticle.vue';
-import ArchitectureArticle from '@/components/ArchitectureArticle.vue';
-import LayoutArticle from '@/components/LayoutArticle.vue';
-import DiningRoomArticle from '@/components/DiningRoomArticle.vue';
+import footerComp from '@/components/HeaderFooter/FooterComp.vue';
+import headerComp from '@/components/HeaderFooter/HeaderComp.vue';
+import KitchenArticle from '@/components/articleDetails/KitchenArticle.vue';
+import BedroomArticle from '@/components/articleDetails/BedroomArticle.vue';
+import BuildingArticle from '@/components/articleDetails/BuildingArticle.vue';
+import ArchitectureArticle from '@/components/articleDetails/ArchitectureArticle.vue';
+import LayoutArticle from '@/components/articleDetails/LayoutArticle.vue';
+import DiningRoomArticle from '@/components/articleDetails/DiningRoomArticle.vue';
 export default {
   el: "#appBlogDetails",
   data() {

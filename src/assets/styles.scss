@@ -852,3 +852,546 @@ body {
     }
   }
 }
+
+// Project Page
+
+.firstPart-project {
+  height: 452px;
+  padding-top: 45px;
+  margin-bottom: 150px;
+  &_background {
+    background-image: url(pics/project-main.webp);
+    width: 100%;
+    height: 356px;
+    background-size: 100%;
+    background-position: 50% 60%;;
+    background-repeat: no-repeat;
+
+  }
+
+  &_text-box {
+    max-width: 100%;
+    // height: 421px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &_text {
+    position: absolute;
+    top: -170px;
+    width: 503px;
+    height: 317px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 37px 37px;
+
+
+    &_h {
+      @include text-style(400, 50px, #292F36);
+    }
+
+    &_nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    &_p {
+      @include text-style(400, 22px, rgb(77, 80, 83));
+    }
+  }
+}
+
+.secondPart-project {
+  display: flex;
+  flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  &_nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+    height: 75px;
+    margin-bottom: 61px;
+    border: 1px #CDA274 solid;
+    border-radius: 18px;
+        &_button {
+          width: 207px;
+          background-color: white;
+          border: none;
+          border-radius: 18px;
+          @include text-style(600, 18px, $colorBlackMain);
+          cursor: pointer;
+        }
+        &_button:hover {
+            @include text-style(600, 18px, white);
+            background-color: #CDA274;
+        }
+  }
+  &_box {
+        display: grid;
+        grid-template-columns: 585px 586px;
+        grid-template-rows: 312px 312px 312px 312px 312px 312px 312px 312px 312px 312px;
+        gap: 30px 30px;
+        grid-template-areas:
+          "firstItem secondItem"
+          "firstItem secondItem"
+          "firstItem thirdItem"
+          "fourthItem thirdItem"
+          "fourthItem thirdItem"
+          "fifthItem sixthItem"
+          "fifthItem sixthItem"
+          "fifthItem seventhItem"
+          "eighthItem seventhItem"
+          "eighthItem .";
+        justify-content: center;
+  }
+}
+
+// .big-item {
+//   width: 568px;
+//   height: 948px;
+// }
+
+// .small-item {
+//   width: 568px;
+//   height: 616px;
+// }
+
+
+.firstItem {
+  grid-area: firstItem;
+}
+
+.secondItem {
+  grid-area: secondItem;
+}
+
+.thirdItem {
+  grid-area: thirdItem;
+}
+
+.fourthItem {
+  grid-area: fourthItem;
+}
+
+.fifthItem {
+  grid-area: fifthItem;
+}
+
+.sixthItem {
+  grid-area: sixthItem;
+}
+
+.seventhItem {
+  grid-area: seventhItem;
+}
+
+.eighthItem {
+  grid-area: eighthItem;
+}
+
+.bedroom {
+  &_firstItem {
+    &_pic {
+      background-image: url(pics/bedroom-project-1.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+  &_secondItem {
+      &_pic {
+        background-image: url(pics/bedroom-project-2.webp);
+        width: 585px;
+        height: 522px;
+        background-size: 170%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+    }
+  &_thirdItem {
+    &_pic {
+      background-image: url(pics/bedroom-project-3.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+  &_fourthItem {
+    &_pic {
+      background-image: url(pics/bedroom-project-4.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+  &_fifthItem {
+    &_pic {
+      background-image: url(pics/bedroom-project-5.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+  &_sixthItem {
+    &_pic {
+      background-image: url(pics/bedroom-project-6.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+    &_seventhItem {
+    &_pic {
+      background-image: url(pics/bedroom-project-7.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 20% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+    &_eighthItem {
+    &_pic {
+      background-image: url(pics/bedroom-project-8.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 60% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.bathroom {
+  &_firstItem {
+    &_pic {
+      background-image: url(pics/bathroom-project-1.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_secondItem {
+    &_pic {
+      background-image: url(pics/bathroom-project-2.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 170%;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_thirdItem {
+    &_pic {
+      background-image: url(pics/bathroom-project-3.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 150%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_fourthItem {
+    &_pic {
+      background-image: url(pics/bathroom-project-4.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 120%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_fifthItem {
+    &_pic {
+      background-image: url(pics/bathroom-project-5.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 220%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_sixthItem {
+    &_pic {
+      background-image: url(pics/bathroom-project-6.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 25% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_seventhItem {
+    &_pic {
+      background-image: url(pics/bathroom-project-7.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 20% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_eighthItem {
+    &_pic {
+      background-image: url(pics/bathroom-project-8.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 60% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.kitchen {
+  &_firstItem {
+    &_pic {
+      background-image: url(pics/add-pic-4.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_secondItem {
+    &_pic {
+      background-image: url(pics/add-pic-6.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 140%;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_thirdItem {
+    &_pic {
+      background-image: url(pics/secondPart-1.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_fourthItem {
+    &_pic {
+      background-image: url(pics/article-box_img-first.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 140%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_fifthItem {
+    &_pic {
+      background-image: url(pics/blog_main.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 220%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_sixthItem {
+    &_pic {
+      background-image: url(pics/kitchen-project-6.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 25% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_seventhItem {
+    &_pic {
+      background-image: url(pics/kitchen-project-7.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 70% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_eighthItem {
+    &_pic {
+      background-image: url(pics/kitchen-project-8.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 60% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.livingroom {
+  &_firstItem {
+    &_pic {
+      background-image: url(pics/main.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_secondItem {
+    &_pic {
+      background-image: url(pics/livingroom-project-2.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 140%;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_thirdItem {
+    &_pic {
+      background-image: url(pics/secondPart-4.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_fourthItem {
+    &_pic {
+      background-image: url(pics/livingroom-project-4.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_fifthItem {
+    &_pic {
+      background-image: url(pics/bedroom-project-1.webp);
+      width: 585px;
+      height: 852px;
+      background-size: 100%;
+      background-position: 75% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_sixthItem {
+    &_pic {
+      background-image: url(pics/livingroom-project-6.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 25% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_seventhItem {
+    &_pic {
+      background-image: url(pics/livingroom-project-7.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 70% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &_eighthItem {
+    &_pic {
+      background-image: url(pics/livingroom-project-8.webp);
+      width: 585px;
+      height: 522px;
+      background-size: 150%;
+      background-position: 60% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.item-down {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    &_p1 {
+      @include text-style(400, 25px, $colorBlackMain);
+    }
+    &_p2 {
+      @include text-style(400, 22px, $colorBlackSoft);
+    }
+  }
+  &_button {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(244, 240, 236);
+    border-radius: 90px;
+    border: none;
+  }
+}
+
+.active-button {
+  background-color: #CDA274;
+  color: white;
+}
+
+.thirdPart-project {
+  &_nav-buttons {
+      padding-bottom: 200px;
+      padding-top: 61px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  
+      &_button {
+        width: 52px;
+        height: 52px;
+        background-color: white;
+        border: 1px solid #CDA274;
+        border-radius: 90px;
+        @include text-style(500, 16px, $colorBlackMain);
+      }
+    }
+}

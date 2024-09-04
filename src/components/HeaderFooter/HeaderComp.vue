@@ -26,7 +26,7 @@ export default {
     return {
       headerItems: [
         { name: "Домой", route: "/" },
-        { name: "Проект", route: "#" },
+        { name: "Проект", route: "/project" },
         { name: "Блог", route: "/blog" },
         { name: "Статьи", route: "/blog-details" }
       ],
