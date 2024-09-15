@@ -28,7 +28,8 @@ export default {
         { name: "Домой", route: "/" },
         { name: "Проект", route: "/project" },
         { name: "Блог", route: "/blog" },
-        { name: "Статьи", route: "/blog-details" }
+        { name: "Статьи", route: "/blog-details" },
+        { name: "Детали", route: "/project-details" },
       ],
     }
   },

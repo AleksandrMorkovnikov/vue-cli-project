@@ -1423,16 +1423,19 @@ body {
     align-items: center;
     &_pic-box {
       margin-top: 103px;
-      background-image: url(pics/project-details_article.webp);
-      width: 1200px;
-      height: 800px;
-      background-size: 105%;
-      background-position: 50% 70%;
-      background-repeat: no-repeat;
-      border-radius: 70px;
+      // width: 1200px;
+      // height: 800px;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    &_pic {
+      width: 1140px;  
+      height: 770px;
+      object-fit: cover;
+      object-position: center 60%;
+      border-radius: 70px;
+      transform: scale(1.05);
     }
     &_h {
       @include text-style(400, 50px, #292F36);
@@ -1452,7 +1455,7 @@ body {
       cursor: pointer;
     }
     &_nav {
-      padding-top: 30px;
+      padding-top: 50px;
       display: flex;
       gap: 25px;
     }
